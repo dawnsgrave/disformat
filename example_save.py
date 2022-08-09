@@ -1,5 +1,4 @@
 import disformat
-import re
 
 tokens = disformat.load_tokens('tokens.txt')
 ids = disformat.load_ids('ids.txt')
