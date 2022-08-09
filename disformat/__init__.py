@@ -17,7 +17,7 @@ def load_ids(file):
     return ids
 
 def youngest_ids(list, save=False, add_note=True):
-    if not save == False:
+    if save:
         ordered = [f'{i}\n' for i in sorted(list, reverse=True)]
         with open(save, 'w') as file:
             if add_note:
@@ -26,7 +26,7 @@ def youngest_ids(list, save=False, add_note=True):
     return sorted(list, reverse=True)
 
 def oldest_ids(list, save=False, add_note=True):
-    if not save == False:
+    if save:
         ordered = [f'{i}\n' for i in sorted(list, reverse=False)]
         with open(save, 'w') as file:
             if add_note:
@@ -35,7 +35,7 @@ def oldest_ids(list, save=False, add_note=True):
     return sorted(list, reverse=False)
 
 def youngest_tokens(list, save=False, add_note=True):
-    if not save == False:
+    if save:
         ordered = [f'{i}\n' for i in sorted(dict(zip(list, [str(decode(token.split('.')[0]), 'utf-8') for token in list])), reverse=True)]
         with open(save, 'w') as file:
             if add_note:
@@ -44,7 +44,7 @@ def youngest_tokens(list, save=False, add_note=True):
     return sorted(dict(zip(list, [str(decode(token.split('.')[0]), 'utf-8') for token in list])), reverse=True)
 
 def oldest_tokens(list, save=False, add_note=True):
-    if not save == False:
+    if save:
         ordered = [f'{i}\n' for i in sorted(dict(zip(list, [str(decode(token.split('.')[0]), 'utf-8') for token in list])), reverse=False)]
         with open(save, 'w') as file:
             if add_note:
