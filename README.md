@@ -5,7 +5,7 @@
 - [X] **Extremely Fast**
 - [X] **Load tokens/id's from file with ANY format (uses regex to find tokens & ids from file)**
 - [X] **You can use this directly in your mass dm tool. (returns a list object)**
-- [X] **Option to save to file*
+- [X] **Option to save to file**
 - [X] **ZERO External API's used.**
 
 -----
